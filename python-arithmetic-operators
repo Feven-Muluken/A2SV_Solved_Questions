@@ -1,0 +1,9 @@
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    sum_ab = a+b
+    difference_ab = a-b
+    multiple_ab = a*b
+    print(sum_ab)
+    print(difference_ab)
+    print(multiple_ab)
