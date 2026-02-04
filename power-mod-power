@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a = float(input(""))
+b = float(input(""))
+m = float(input(""))
+
+n = b
+answer = 1
+while n > 0:
+    answer *= a
+    n-=1
+print(int(answer))
+print(int(answer % m))
