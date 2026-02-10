@@ -4,8 +4,7 @@ class Solution:
         for i in cpdomains:
             a = i.split(' ')
             b = a[1].split('.')
-            l = 0
-            while l < len(b):
+            for l in range(len(b)):
                 all_doms = a[0] + ' ' + ".".join(b[l:]) 
                 ans.append(all_doms)
                 l += 1
