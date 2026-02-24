@@ -1,9 +1,9 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        from collections import Counter 
-        count = Counter(nums)
-        for i in count:
-            if count[i] != 1:
-                continue 
+        count = dict()
+        for i in nums:
+            if i not in count:
+                count[i] = 1
             else:
-                return i
+                count[i] += 1
+        return [x for x in count if count[x] == 1][0]
