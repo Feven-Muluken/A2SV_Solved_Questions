@@ -14,7 +14,7 @@ class Solution:
                     count_10 -= 1
                     count_5 -= 1
                 elif count_5 >= 3:
-                    count_5 -+ 3
+                    count_5 -= 3
                 else:
                     return False
         return True
